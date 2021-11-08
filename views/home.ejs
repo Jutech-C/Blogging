@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+<h1 class="home">Home</h1>
+<p > <%= homeStartingContent %> </p>
+
+ <% publishArray.forEach(function(publish){  %>
+   <h1><%=publish.Title %> </h1>
+    <p> <%=publish.Post.substring(0,100) + " ..."%> <a href="/post/<%=publish.Title %>">Read More</a> </p>
+    
+ <% }) %>
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>
